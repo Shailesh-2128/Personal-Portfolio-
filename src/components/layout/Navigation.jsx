@@ -3,12 +3,27 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Download, Sparkles } from 'lucide-react';
 import { NAVIGATION, RESUME_DATA } from '../../data/resumeData';
 
+// Import your resume file (adjust path as needed)
+import resumePDF from '../../assets/Shailesh_jiwana_Resume (2).pdf';
+
 export const Navigation = ({ 
   isMenuOpen, 
   setIsMenuOpen, 
   isScrolled, 
   activeSection 
 }) => {
+  
+  const handleDownloadResume = () => {
+    // Method 1: Open in new tab
+    window.open(resumePDF, '_blank');
+    
+    // Method 2: Force download (alternative approach)
+    // const link = document.createElement('a');
+    // link.href = resumePDF;
+    // link.download = 'Shailesh_Jiwana_Resume.pdf';
+    // link.click();
+  };
+
   return (
     <motion.nav 
       initial={{ y: -100 }}
@@ -60,7 +75,7 @@ export const Navigation = ({
             }}
             whileTap={{ scale: 0.95 }}
             className="px-6 py-2.5 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-full font-semibold flex items-center gap-2 text-sm lg:text-base"
-            onClick={() => window.open('/resume.pdf', '_blank')}
+            onClick={handleDownloadResume}
           >
             <Download size={18} />
             Resume
@@ -110,7 +125,7 @@ export const Navigation = ({
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 className="w-full py-3 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-lg font-semibold flex items-center justify-center gap-2 mt-2"
-                onClick={() => window.open('/resume.pdf', '_blank')}
+                onClick={handleDownloadResume}
               >
                 <Download size={18} />
                 Download Resume

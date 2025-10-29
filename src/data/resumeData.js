@@ -6,7 +6,7 @@ export const RESUME_DATA = {
     LOCATION: 'Akurdi, Pune',
     EDUCATION: 'Bachelor of Science in Computer Science (Third Year)',
     CGPA: '8.7/10',
-    EMAIL: 'shaileshjiwana128@gmail.com',
+    EMAIL: 'shaileshjiwana2128@gmail.com',
     GITHUB: 'https://github.com/Shailesh-2128',
     LINKEDIN: 'https://www.linkedin.com/in/shailesh-jiwana-944b9b380/?trk=opento_sprofile_goalscard',
     TAGLINE: 'Passionate and results-driven Software Developer with hands-on experience in React.js, Node.js and Java. Proficient in developing full-stack web applications, real-time chat systems, and AI-powered tools.'
@@ -48,17 +48,8 @@ export const RESUME_DATA = {
       githubLink: 'https://github.com/Shailesh-2128/Chat-Application-',
       icon: 'MessageCircle',
       featured: false
-    },
-    {
-      title: 'Personal Portfolio Website',
-      description: 'Designed a modern, responsive portfolio website featuring project showcases and smooth animations.',
-      tech: ['React.js', 'Framer Motion', 'Tailwind CSS'],
-      gradient: 'from-orange-600 to-red-600',
-      liveLink: '#',
-      githubLink: 'https://github.com/Shailesh-2128/portfolio-website',
-      icon: 'Code2',
-      featured: false
     }
+   
   ],
   EDUCATION: [
     {
@@ -116,7 +107,7 @@ export const RESUME_DATA = {
       icon: 'Mail', 
       label: 'Email', 
       color: 'hover:bg-cyan-500/20 hover:border-cyan-500/50',
-      link: 'shaileshjiwana128@gmail.com'
+      link: 'shaileshjiwana2128@gmail.com'
     }
   ]
 };
