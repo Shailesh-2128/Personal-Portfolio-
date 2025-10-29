@@ -4,7 +4,7 @@ import { Menu, X, Download, Sparkles } from 'lucide-react';
 import { NAVIGATION, RESUME_DATA } from '../../data/resumeData';
 
 // Import your resume file (adjust path as needed)
-import resumePDF from '../layout/Shailesh_Jiwana_Resume (2).pdf';
+import resumePDF from '../../assets/Shailesh_jiwana_Resume (2).pdf';
 
 export const Navigation = ({ 
   isMenuOpen, 
